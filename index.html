@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P2P Button Press</title>
+</head>
+<body>
+    <h1>P2P Connection</h1>
+    <div>
+        <input type="text" id="roomCodeInput" placeholder="Enter Room Code (e.g., 1234)">
+        <input type="password" id="passcode" placeholder="Passcode (optional)">
+        <button onclick="hostServer()">Host Room</button>
+        <button onclick="joinServer()">Join Room</button>
+    </div>
+    <hr>
+    <button onclick="sendMessage()" disabled id="sendButton">Send Button Press</button>
+    <div id="messages"></div>
+
+    <!-- Include PeerJS library from a CDN -->
+    <script src="unpkg.com"></script>
+    <script src="drconnect2.js"></script>
+</body>
+</html>
